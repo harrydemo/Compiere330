@@ -1,0 +1,23 @@
+#Compiere (c) 1999-2007
+#Mon Oct 08 23:09:45 EDT 2018
+UIFlat=xyzN
+WarningD=Einstellungen_nicht_aendern,_da_diese_undokumentierte_Nebenwirkungen_haben.
+UILookFeel=xyzCompiere
+StorePassword=xyzY
+DataSource=xyzjava\:compiereDB
+CacheWindow=xyzN
+TempDir=xyzC\:\\Users\\harry\\AppData\\Local\\Temp\\
+ApplicationPassword=xyzGardenAdmin
+Warning=Do_not_change_any_of_the_data_as_they_will_have_undocumented_side_effects.
+TraceLevel=xyzWARNING
+TraceFile=xyzN
+CompiereSys=xyzN
+AutoLogin=xyzN
+PrintPreview=xyzY
+ApplicationUserID=xyzGardenAdmin
+WebSessionExpiration=xyz1800
+Language=xyz\u7B80\u4F53\u4E2D\u6587 (CN)
+AutoNew=xyzY
+Connection=xyzCConnection[name\=DELL-Inspiron-7770{DELL-Inspiron-7770-xe\#compiere},AppsType\=jboss,AppsHost\=DELL-Inspiron-7770,AppsPort\=1099,Profile\=L,WebPort\=80,type\=oracle,DBhost\=DELL-Inspiron-7770,DBport\=1521,DBname\=xe,BQ\=false,FW\=false,FWhost\=,FWport\=1630,UID\=compiere,PWD\=compiere]
+UITheme=xyzCompiere Theme
+CDate264=xyz2018-10-08 23\:06\:21.502

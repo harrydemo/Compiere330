@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run-chat-server">
+	
+
+   <property name="examples.root" value="${basedir}"/>
+   <property name="jboss.root" value="${basedir}/../../../../../../.."/>
+   <property name="lib.dir" value="${jboss.root}"/>
+	
+   <path id="library.classpath">
+      <fileset dir="${lib.dir}">
+         <include name="**/*.jar"/>
+      </fileset>
+   </path>
+
+   <target name="run-chat-client" depends="compile">
+  	  <java classname="org.jboss.remoting.samples.chat.client.Chat" fork="true">
+         <classpath>
+            <path refid="library.classpath"/>
+         </classpath>
+     	 <jvmarg value="-Dlog4j.configuration=file:${examples.root}/log4j.server_properties"/>
+     	 <arg value="${examples.root}/chat.conf"/>
+      </java>
+   </target>
+
+   <target name="run-chat-server" depends="compile">
+      <java classname="org.jboss.remoting.samples.chat.server.ChatManagerLauncher" fork="true">
+         <classpath>
+            <path refid="library.classpath"/>
+         </classpath>
+      	 <jvmarg value="-Dlog4j.configuration=file:${examples.root}/log4j.server_properties"/>
+      	 <arg value="${examples.root}/chat.conf"/>
+      </java>
+   </target>
+	
+   <target name="compile">
+   	  <ant dir="${jboss.root}" target="compile"/>
+   </target>
+</project>

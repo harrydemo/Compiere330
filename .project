@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>C-330</name>
+	<comment></comment>
+	<projects>
+		<project>ad</project>
+		<project>base</project>
+		<project>client</project>
+		<project>common</project>
+		<project>extend</project>
+		<project>install</project>
+		<project>interfaces</project>
+		<project>jboss</project>
+		<project>print</project>
+		<project>serverApps</project>
+		<project>serverRoot</project>
+		<project>sqlj</project>
+		<project>sys</project>
+		<project>tools</project>
+		<project>webCM</project>
+		<project>webStore</project>
+		<project>xuom</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
